@@ -1,0 +1,42 @@
+<resources>
+    <string name="app_name">SIPI</string>
+
+    // Textos
+    <string name="text_aviso_numero">O SIPI enviará um SMS para verificar o seu número de telefone. Insira o código de área e número do seu telefone:</string>
+    <string name="text_aviso_tarifa">Tarifas de SMS de sua operadora podem ser aplicadas</string>
+    <string name="text_codigo_pais">+55</string>
+    <string name="text_seu_numero">Seu número</string>
+    <string name="text_codigo_verificacao">Código de verificação</string>
+    <string name="text_aviso_codigo">Insira o código enviado por SMS para autenticação:</string>
+    <string name="text_aviso_nome">Insira seu nome para identificação nos projetos:</string>
+    <string name="text_seu_nome">Seu nome</string>
+    <string name="text_nome_projeto">Informe o nome do projeto</string>
+    <string name="text_participantes">Participantes</string>
+    <string name="text_digite_aqui">Digite aqui...</string>
+
+    // Botões
+    <string name="btn_continuar">Continuar</string>
+    <string name="btn_verificar">Verificar</string>
+    <string name="btn_salvar">Salvar</string>
+    <string name="btn_radio_iniciar_progresso">Início</string>
+    <string name="btn_radio_em_progresso">Em progresso</string>
+    <string name="btn_radio_concluido">Concluído</string>
+    <string name="btn_enviar">ENV.</string>
+
+    // Error
+    <string name="error_campo_obrigatorio">Este campo é obrigatório</string>
+    <string name="error_selecao_contato">É necessário selecionar pelo menos um contato para continuar.</string>
+    <string name="error_nome_projeto">É necessário informar um nome ao projeto para continuar.</string>
+
+    // Titulos
+    <string name="title_contatos">Contatos</string>
+    <string name="title_novo_projeto">Novo projeto</string>
+    <string name="title_situacao">Situação do projeto</string>
+
+    // Descrições
+    <string name="desc_enviar">Enviar</string>
+
+    // Menus
+    <string name="menu_situacoes">Mudar situação</string>
+
+</resources>

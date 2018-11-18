@@ -1,0 +1,74 @@
+<?xml version="1.0" encoding="utf-8"?>
+<layout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+
+    <data>
+
+        <variable
+            name="model"
+            type="br.com.projeto.sipi.viewmodel.NumeroViewModel" />
+    </data>
+
+    <android.support.constraint.ConstraintLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:padding="16dp">
+
+        <TextView
+            android:id="@+id/numeroTextViewNumero"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="@string/text_aviso_numero"
+            android:textAppearance="?android:textAppearance"
+            app:layout_constraintBottom_toTopOf="@id/numeroLinearLayoutNumero"
+            app:layout_constraintTop_toTopOf="parent"
+            app:layout_constraintVertical_chainStyle="packed" />
+
+        <LinearLayout
+            android:id="@+id/numeroLinearLayoutNumero"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            app:layout_constraintBottom_toTopOf="@id/numeroButtonContinuar"
+            app:layout_constraintTop_toBottomOf="@id/numeroTextViewNumero">
+
+            <android.support.design.widget.TextInputLayout
+                android:id="@+id/numeroTextInputLayoutNumero"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1">
+
+                <EditText
+                    android:id="@+id/numeroEditTextNumero"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:hint="@string/text_seu_numero"
+                    android:inputType="phone"
+                    android:maxLength="11"
+                    android:text="@={model.numero}" />
+
+            </android.support.design.widget.TextInputLayout>
+
+        </LinearLayout>
+
+        <Button
+            android:id="@+id/numeroButtonContinuar"
+            style="@style/Widget.AppCompat.Button.Colored"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="@string/btn_continuar"
+            app:layout_constraintBottom_toTopOf="@id/numeroTextViewTarifa"
+            app:layout_constraintTop_toBottomOf="@id/numeroLinearLayoutNumero" />
+
+        <TextView
+            android:id="@+id/numeroTextViewTarifa"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="@string/text_aviso_tarifa"
+            android:textAppearance="?android:textAppearance"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintTop_toBottomOf="@id/numeroButtonContinuar" />
+
+    </android.support.constraint.ConstraintLayout>
+</layout>

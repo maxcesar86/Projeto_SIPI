@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string-array name="array_situacoes">
+        <item>@string/btn_radio_iniciar_progresso</item>
+        <item>@string/btn_radio_em_progresso</item>
+        <item>@string/btn_radio_concluido</item>
+    </string-array>
+</resources>

@@ -1,0 +1,54 @@
+<?xml version="1.0" encoding="utf-8"?>
+<layout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+
+    <data>
+
+        <variable
+            name="model"
+            type="br.com.projeto.sipi.viewmodel.NomeViewModel" />
+    </data>
+
+    <android.support.constraint.ConstraintLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:padding="16dp">
+
+        <TextView
+            android:id="@+id/nomeTextViewNome"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="@string/text_aviso_nome"
+            android:textAppearance="?android:textAppearance"
+            app:layout_constraintBottom_toTopOf="@id/nomeTextInputLayoutNome"
+            app:layout_constraintTop_toTopOf="parent"
+            app:layout_constraintVertical_chainStyle="packed" />
+
+        <android.support.design.widget.TextInputLayout
+            android:id="@+id/nomeTextInputLayoutNome"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            app:layout_constraintBottom_toTopOf="@id/nomeButtonSalvar"
+            app:layout_constraintTop_toBottomOf="@id/nomeTextViewNome">
+
+            <EditText
+                android:id="@+id/nomeEditTextNome"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:hint="@string/text_seu_nome"
+                android:inputType="text"
+                android:maxLength="100" />
+
+        </android.support.design.widget.TextInputLayout>
+
+        <Button
+            android:id="@+id/nomeButtonSalvar"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="@string/btn_salvar"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintTop_toBottomOf="@id/nomeTextInputLayoutNome" />
+
+    </android.support.constraint.ConstraintLayout>
+
+</layout>
